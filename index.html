@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+      
+    <div>
+        <div class="container">
+            <div class="border height positionparent">
+                <img src="./assets/5d6580ca-017b-4511-a39c-4362e01735b0.jpeg" alt="">
+                <h1>Generate Serial Numbers For Ballion</h1>
+                <form id="serialNumberForm">
+                    <div class="display">
+                        <h1 class="colortext">Count</h1>
+                        <input type="number" class="button1" name="count" required/>
+                    </div>
+                    <div id="successMessage" style="display: none; color: green;">Serial number generated successfully!</div>
+                    <div id="errorMessage" style="display: none; color: red;">An error occurred while generating serial number.</div>
+                    <div class="positionchild">
+                        <button type="button" class="button3">Cancel</button>
+                        <button type="submit" class="button2">Generate</button>
+                        <div id="loader" style="display: none; text-align: center;">
+                            <div class="loader">
+                                <div class="loader-inner" style="color:chocolate; font-size: 30px; font-weight:500 ; text-align: center;">loading....</div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
